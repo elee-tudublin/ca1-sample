@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Calculator</h2>
+
+      <div class="form-group">
+        <label for="numA">Number 1: </label>
+        <input
+          id="numA"
+          type="number"
+          step="any"
+          class="form-control"
+          name="numA"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div class="form-group">
+        <label for="numB">Number 2:</label>
+        <input
+          id="numB"
+          type="number"
+          step="any"
+          class="form-control"
+          name="numB"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div class="form-group">
+        <button onclick="add()" type="button" class="btn btn-primary">
+          Add
+        </button>
+        <button onclick="subtract()" type="button" class="btn btn-primary">
+          Subtract
+        </button>
+        <button onclick="multiply()" type="button" class="btn btn-primary">
+          Multiply
+        </button>
+        <button onclick="divide()" type="button" class="btn btn-primary">
+          Divide
+        </button>
+      </div>
+      <label>Answer:</label>
+      <div id="answer" class="well answer">numA + numB = answer</div>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
